@@ -1,7 +1,7 @@
 import { router } from '@inertiajs/core';
 import { Link, Head } from '@inertiajs/react';
 import classNames from 'classnames';
-import React, { PropsWithChildren, useState } from 'react';
+import React, {JSX, PropsWithChildren, useState } from 'react';
 import useRoute from '@/Hooks/useRoute';
 import useTypedPage from '@/Hooks/useTypedPage';
 import ApplicationMark from '@/Components/ApplicationMark';
@@ -52,7 +52,7 @@ export default function AppLayout({
       <Banner />
 
       <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
-        <nav className="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
+        <nav className="bg-red-500 dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
           {/* <!-- Primary Navigation Menu --> */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
@@ -70,7 +70,7 @@ export default function AppLayout({
                     href={route('dashboard')}
                     active={route().current('dashboard')}
                   >
-                    Dashboard
+                    Dashboards
                   </NavLink>
                 </div>
               </div>
