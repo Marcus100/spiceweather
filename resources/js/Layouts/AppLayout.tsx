@@ -70,7 +70,7 @@ export default function AppLayout({
                     href={route('dashboard')}
                     active={route().current('dashboard')}
                   >
-                    Dashboards
+                    SpiceWeather
                   </NavLink>
                 </div>
               </div>
